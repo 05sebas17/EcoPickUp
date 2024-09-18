@@ -4,12 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('pickupForm');
     const materialList = document.getElementById('materialList');
     
-    // Verificar si el formulario de programación de recogida existe antes de agregar el evento
     if (form) {
         form.addEventListener('submit', async function(event) {
             event.preventDefault();
 
-            // Obtener todos los materiales y cantidades seleccionados
             const materials = Array.from(materialList.querySelectorAll('.materialItem')).map(item => {
                 return {
                     type: item.querySelector('.material').value,
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             try {
-                // Enviar los datos de los materiales seleccionados a la API
                 const data = await schedulePickupDashboard(materials);
                 alert(data.status);
             } catch (error) {
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Agregar más materiales dinámicamente
         document.getElementById('addMaterial').addEventListener('click', function() {
             const newMaterialItem = document.createElement('div');
             newMaterialItem.classList.add('materialItem');

@@ -5,14 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const materialList = document.getElementById('materialList');
     const addMaterialButton = document.getElementById('addMaterial');
 
-    // Manejar la programación de recogida
     form.addEventListener('submit', async function(event) {
         event.preventDefault();
 
         const date = document.getElementById('date').value;
         const address = document.getElementById('address').value;
         
-        // Obtener todos los materiales seleccionados
         const materials = Array.from(materialList.querySelectorAll('.materialItem')).map(item => {
             return {
                 type: item.querySelector('.type').value,
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Agregar más materiales dinámicamente
     addMaterialButton.addEventListener('click', function() {
         const newMaterialItem = document.createElement('div');
         newMaterialItem.classList.add('materialItem');

@@ -1,6 +1,5 @@
 const API_URL = 'http://127.0.0.1:8000';
 
-// Función para programar recogida desde la página de schedule
 export const schedulePickupPage = async (date, address, materials) => {
     try {
         const response = await fetch(`${API_URL}/schedule`, {

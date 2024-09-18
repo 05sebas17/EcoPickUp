@@ -6,18 +6,18 @@ document.getElementById('registerForm').addEventListener('submit', async functio
 
     try {
         const response = await fetch('http://127.0.0.1:8000/register', {
-            method: 'POST',  // Usamos POST para enviar los datos de registro
+            method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ username, password })  // Enviamos el JSON con los datos
+            body: JSON.stringify({ username, password }) 
         });
 
         const data = await response.json();
 
         if (data.status === 'User Registered') {
             alert('Usuario registrado con éxito');
-            window.location.href = "/frontend/login.html";  // Redirigir al login después del registro
+            window.location.href = "/frontend/login.html";   
         } else {
             alert('Error en el registro');
         }

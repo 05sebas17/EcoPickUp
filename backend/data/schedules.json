@@ -22,5 +22,35 @@
                 "quantity": "5"
             }
         ]
+    },
+    {
+        "date": "2024-09-12",
+        "address": "universidad",
+        "materials": [
+            {
+                "type": "plastico",
+                "quantity": "5"
+            }
+        ]
+    },
+    {
+        "date": "2024-09-28",
+        "address": "universidad",
+        "materials": [
+            {
+                "type": "vidrio",
+                "quantity": "5"
+            }
+        ]
+    },
+    {
+        "date": "2024-09-19",
+        "address": "Calle 64i#68h\u00a024",
+        "materials": [
+            {
+                "type": "vidrio",
+                "quantity": "5"
+            }
+        ]
     }
 ]
