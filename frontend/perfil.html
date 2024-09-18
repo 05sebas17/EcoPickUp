@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPickUp - Perfil de Usuario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Perfil de Usuario</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Información Personal</h2>
+            <p>Nombre: Usuario</p>
+            <p>Correo: usuario@example.com</p>
+        </section>
+
+        <section>
+            <h2>Modificar Información</h2>
+            <form>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Nueva Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+        
+        <button class="volver-boton" onclick="history.back()">Volver</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,480 @@
+/* Estilos generales */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header img.logo {
+    height: auto;
+    width: 10vw;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+header nav ul li a {
+    font-family: 'ACME', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.8vw;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+h1, h2 {
+    font-family: 'ACME',sans-serif;
+    display: flex;
+    color: #4CAF50;
+    justify-content: space-around;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-family: 'ACME',sans-serif;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    font-family: "ACME", sans-serif;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: space-around;
+}
+
+ul li:last-child {
+    display: flex;
+    border-bottom: none;
+}
+
+/* Estilo para las opciones (enlaces a otras páginas) */
+ul li a {
+    font-family: 'ACME',sans-serif;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.enlaces-comunes a {
+    display: flex;
+    font-family: "ACME", sans-serif;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: space-around;
+}
+
+ul li a:hover {
+    color: #388E3C;
+}
+
+/* Estilo de botones */
+button, .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-family: "ACME", sans-serif;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+}
+
+p strong {
+    color: #388E3C;
+}
+
+/* Estilos para la sección de educación sobre reciclaje */
+#educacion-reciclaje {
+    background-color: #f9f9f9;
+    margin: 10px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#educacion-reciclaje h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#educacion-reciclaje ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#educacion-reciclaje ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#educacion-reciclaje ul li:last-child {
+    border-bottom: none;
+}
+
+#educacion-reciclaje a {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#educacion-reciclaje a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la página de login y registro */
+.hero-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+.hero-content {
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.hero-content .btn-register,
+.hero-content .btn-login {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: 2px solid #4CAF50;
+    background-color: transparent;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-content .btn-register:hover,
+.hero-content .btn-login:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hero-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para las secciones de formularios */
+form {
+    background-color: #f0dddd;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+label, input, select {
+    display: block;
+    font-family: 'ACME',sans-serif;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    font-size: 1rem;
+}
+
+button {
+    font-family: 'ACME',sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'ACME', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Sección de educación sobre reciclaje con imágenes de fondo */
+.education-section {
+    position: relative;
+    background-image: url('../images/fondo-concepto-reciclaje_665280-9575.jpg'), 
+    url('../images/reciclaje-de-residuos.jpg'), 
+    url('../images/214375122-imagen-conceptual-del-símbolo-de-reciclaje-hecho-de-hojas-verdes-sobre-fondo-oscuro.jpg');
+    background-size: 33.33% 100%, 33.33% 100%, 33.33% 100%; /* Cada imagen ocupa un tercio */
+    background-repeat: no-repeat;
+    background-position: left, center, right; /* Posicionar las imágenes en tres partes horizontales */
+    height: 500px; /* Ajustar la altura según lo prefieras */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco transparente */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2, h3, p, ul {
+    display: flex;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Estilo de la lista */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Imagen del logo */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Estilos para la tabla del historial de recogidas */
+.historial-section {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+/* Botón de volver */
+.volver-boton {
+    font-family: 'ACME',sans-serif;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.volver-boton:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la sección de educación sobre reciclaje */
+.education-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.education-overlay {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title h2 {
+    font-family: 'ACME', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.article-title h3 {
+    font-family: 'ACME', sans-serif;
+    font-size: 1.5rem;
+    color: #388E3C;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.article-intro p {
+    font-family: 'ACME', sans-serif;
+    display: flex;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.recycling-tips {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tip-item {
+    margin-bottom: 20px;
+}
+
+.tip-item h4 {
+    font-family: 'ACME', sans-serif;
+    font-size: 1.3rem;
+    color: #388E3C;
+    margin-bottom: 5px;
+}
+
+.tip-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-left: 20px;
+}
+
+.final-note p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm" method="POST">
+        <label for="loginUsername">Nombre de Usuario:</label>
+        <input type="text" id="loginUsername" name="username" required>
+        <label for="loginPassword">Contraseña:</label>
+        <input type="password" id="loginPassword" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>¿No tienes una cuenta? <a href="register.html">unete al cambio</a></p>
+
+    <script src="js/login.js"></script>
+    <button class="volver-boton" onclick="history.back()">Volver</button>
+</body>
+</html>

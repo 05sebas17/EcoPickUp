@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programar Recogida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Programar Recogida de Residuos</h2>
+    <form id="scheduleForm">
+        <label for="date">Fecha de Recogida:</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Campo adicional de dirección -->
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" name="address" required placeholder="Ingrese la dirección de recogida">
+
+        <!-- Lista de materiales -->
+        <div id="materialList">
+            <div class="materialItem">
+                <label for="type">Seleccionar Tipo de Material:</label>
+                <select class="type" name="type" required>
+                    <option value="plastic">Plástico</option>
+                    <option value="paper">Papel</option>
+                    <option value="glass">Vidrio</option>
+                    <option value="metal">Metal</option>
+                </select>
+
+                <label for="quantity">Cantidad:</label>
+                <input type="number" class="quantity" name="quantity" required min="1">
+            </div>
+        </div>
+
+        <button type="button" id="addMaterial">Agregar Material</button>
+        <button type="submit">Programar Recogida</button>
+    </form>
+    <button class="volver-boton" onclick="history.back()">Volver</button>
+
+    <script src="js/schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPickUp - Recompensas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recompensas</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Saldo de Recompensas</h2>
+            <p>Tienes un total de - <span id="puntosTotales">0</span> - puntos acumulados.</p>
+        </section>
+
+        <section>
+            <h2>Desglose de Puntos por Material</h2>
+            <table id="tablaPuntos" border="1" style="width: 100%; text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Kilos Reciclados</th>
+                        <th>Puntos Acumulados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se llenará la tabla dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Canjea tus Puntos</h2>
+            <ul>
+                <li>Descuento en tiendas asociadas</li>
+                <li>Bono de regalo</li>
+            </ul>
+            <button>Canjear</button>
+        </section>
+
+        <button class="volver-boton" onclick="history.back()">Volver</button>
+    </main>
+
+    <script src="js/recompensas.js"></script>
+</body>
+</html>

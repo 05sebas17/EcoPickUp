@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPickUp - Programar Recogida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Programar Recogida</h1>
+    </header>
+
+    <main>
+        <form id="scheduleForm">
+            <label for="date">Fecha de Recogida:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="address">Dirección de Recogida:</label>
+            <input type="text" id="address" name="address" required placeholder="Ingrese su dirección">        
+
+            <!-- Contenedor donde se agregarán los diferentes tipos de material -->
+            <div id="materialList">
+                <div class="materialItem">
+                    <label for="type">Tipo de Material:</label>
+                    <select class="type" name="type" required>
+                        <option value="plastico">Plástico</option>
+                        <option value="papel">Papel</option>
+                        <option value="vidrio">Vidrio</option>
+                        <option value="metal">Metal</option>
+                    </select>
+
+                    <label for="quantity">Cantidad (kg):</label>
+                    <input type="number" class="quantity" name="quantity" required min="1">
+                </div>
+            </div>
+
+            <!-- Botón para agregar más materiales -->
+            <button type="button" id="addMaterial">Agregar Otro Material</button>
+
+            <button type="submit">Programar</button>
+        </form>
+        <button class="volver-boton" onclick="history.back()">Volver</button>
+
+    </main>
+
+    <script type="module" src="js/schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Únete al equipo</h2>
+    <form id="registerForm" method="POST">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia Sesión</a></p>
+
+    <script src="js/register.js"></script>
+    <button class="volver-boton" onclick="history.back()">Volver</button>
+</body>
+</html>

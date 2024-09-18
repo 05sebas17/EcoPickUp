@@ -1,0 +1,26 @@
+[
+    {
+        "date": "2024-09-14",
+        "address": "crr78n #40-34 sur",
+        "materials": [
+            {
+                "type": "plastico",
+                "quantity": "5"
+            },
+            {
+                "type": "vidrio",
+                "quantity": "10"
+            }
+        ]
+    },
+    {
+        "date": "2024-09-14",
+        "address": "85a rutgers rd",
+        "materials": [
+            {
+                "type": "papel",
+                "quantity": "5"
+            }
+        ]
+    }
+]
